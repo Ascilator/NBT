@@ -214,6 +214,12 @@ h4 {
 .white_round_btn._big .inside {
   padding: 43px 63px;
 }
+@media screen and (max-width: 1200px) {
+  .white_round_btn._big .inside {
+    padding: 24px 30px;
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 600px) {
   .white_round_btn {
     padding-right: 50px;
@@ -648,6 +654,11 @@ h4 {
 .first_screen._slider_bg .breadcrumps {
   margin-bottom: 300px;
 }
+@media screen and (max-width: 700px) {
+  .first_screen._slider_bg .breadcrumps {
+    margin-bottom: 230px;
+  }
+}
 .first_screen._slider_bg .main_screen .wrapper {
   padding-top: 80px;
 }
@@ -662,6 +673,11 @@ h4 {
   margin-top: -20px;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .first_screen._slider_bg .btn_container {
+    margin-top: 20px;
+  }
 }
 .first_screen._slider_bg .header,
 .first_screen._slider_bg .main_screen {
@@ -954,6 +970,10 @@ h4 {
   font-size: 16px;
   line-height: 26px;
   color: #001471;
+}
+.advanteges_block .bottom_part .warning_popup {
+  position: fixed;
+  z-index: 9;
 }
 @media screen and (max-width: 1200px) {
   .advanteges_block .bottom_part {
@@ -3823,6 +3843,11 @@ h4 {
 .main_problems .block_title span {
   color: #8ef0ef;
 }
+@media screen and (max-width: 700px) {
+  .main_problems .block_title {
+    margin-bottom: 50px;
+  }
+}
 .main_problems .contact_part {
   display: flex;
   align-items: stretch;
@@ -3840,11 +3865,54 @@ h4 {
 .main_problems .contact_part .content_item .icon {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 700px) {
+  .main_problems .contact_part .content_item .icon {
+    margin-bottom: 0;
+  }
+  .main_problems .contact_part .content_item .icon img {
+    width: 33px;
+  }
+}
 .main_problems .contact_part .content_item .name {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
   color: #ffffff;
+}
+@media screen and (max-width: 700px) {
+  .main_problems .contact_part .content_item .name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    margin: auto 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main_problems .contact_part .content_item {
+    padding: 20px;
+    flex: 0 1 calc(50% - 7.5px);
+    height: 170px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_problems .contact_part {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main_problems .contact_part {
+    gap: 15px;
+    row-gap: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_problems {
+    padding: 70px 0;
+  }
 }
 
 .key_processes {

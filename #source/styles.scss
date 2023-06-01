@@ -208,6 +208,10 @@ h4 {
   &._big {
     .inside {
       padding: 43px 63px;
+      @media screen and (max-width: 1200px) {
+        padding: 24px 30px;
+        font-size: 12px;
+      }
     }
   }
   @media screen and (max-width: 600px) {
@@ -627,6 +631,9 @@ h4 {
     }
     .breadcrumps {
       margin-bottom: 300px;
+      @media screen and (max-width: 700px) {
+        margin-bottom: 230px;
+      }
     }
     .main_screen .wrapper {
       padding-top: 80px;
@@ -642,6 +649,10 @@ h4 {
       margin-top: -20px;
       justify-content: space-between;
       align-items: center;
+
+      @media screen and (max-width: 700px) {
+        margin-top: 20px;
+      }
     }
     .header,
     .main_screen {
@@ -920,6 +931,11 @@ h4 {
       font-size: 16px;
       line-height: 26px;
       color: $color_blue;
+    }
+
+    .warning_popup {
+      position: fixed;
+      z-index: 9;
     }
 
     @media screen and (max-width: 1200px) {
@@ -3632,6 +3648,10 @@ h4 {
     span {
       color: $color_aqua;
     }
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 50px;
+    }
   }
   .contact_part {
     display: flex;
@@ -3652,14 +3672,46 @@ h4 {
 
       .icon {
         margin-bottom: 30px;
+        @media screen and (max-width: 700px) {
+          margin-bottom: 0;
+          img {
+            width: 33px;
+          }
+        }
       }
       .name {
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
         color: #ffffff;
+        @media screen and (max-width: 700px) {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 130%;
+          margin: auto 0;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        padding: 20px;
+        flex: 0 1 calc(50% - 7.5px);
+        height: 170px;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
       }
     }
+    @media screen and (max-width: 1000px) {
+      padding-left: 0;
+    }
+    @media screen and (max-width: 700px) {
+      gap: 15px;
+      row-gap: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 70px 0;
   }
 }
 
