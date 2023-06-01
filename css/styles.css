@@ -806,15 +806,18 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  left: 50%;
+  left: 0%;
   top: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  transform: translate(-50%, 0);
+  transform: translate(0%, 0);
   -webkit-text-stroke: 1px #001471;
   -webkit-text-fill-color: transparent;
+  padding-left: 100%;
+  -webkit-animation: scroll 8s infinite linear;
+          animation: scroll 8s infinite linear;
 }
 @media screen and (max-width: 1200px) {
   .overflow_title {
@@ -829,6 +832,23 @@ h4 {
   }
 }
 
+@-webkit-keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 .advanteges_block {
   position: relative;
   overflow: hidden;

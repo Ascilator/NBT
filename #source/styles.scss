@@ -784,12 +784,15 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  left: 50%;
+  left: 0%;
   top: 0;
   user-select: none;
-  transform: translate(-50%, 0);
+  transform: translate(0%, 0);
   -webkit-text-stroke: 1px $color_blue;
   -webkit-text-fill-color: transparent;
+
+  padding-left: 100%;
+  animation: scroll 8s infinite linear;
   @media screen and (max-width: 1200px) {
     font-size: 150px;
     line-height: 180px;
@@ -798,6 +801,16 @@ h4 {
   @media screen and (max-width: 700px) {
     font-size: 100px;
     line-height: 122px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
   }
 }
 
