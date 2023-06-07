@@ -3371,6 +3371,23 @@ h4 {
 .big_text_block .right_part .version {
   padding-bottom: 5px;
   border-bottom: 1px solid #8ef0ef;
+  position: relative;
+  cursor: pointer;
+}
+.big_text_block .right_part .version .drop_down_body {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 110%;
+  background: #001471;
+  z-index: 5;
+  color: #8ef0ef;
+  font-size: 22px;
+  white-space: nowrap;
+}
+.big_text_block .right_part .version .drop_down_body .drop_down_item {
+  padding: 15px;
+  cursor: pointer;
 }
 .big_text_block .right_part .docs_main_part {
   padding: 100px 20px 200px 10%;

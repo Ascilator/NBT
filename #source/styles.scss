@@ -3171,6 +3171,23 @@ h4 {
     .version {
       padding-bottom: 5px;
       border-bottom: 1px solid #8ef0ef;
+      position: relative;
+      cursor: pointer;
+      .drop_down_body {
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 110%;
+        background: $color_blue;
+        z-index: 5;
+        color: $color_aqua;
+        font-size: 22px;
+        white-space: nowrap;
+        .drop_down_item {
+          padding: 15px;
+          cursor: pointer;
+        }
+      }
     }
 
     .docs_main_part {
