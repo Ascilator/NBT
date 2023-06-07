@@ -50,6 +50,7 @@ $(function () {
   $('.menu_item')
     .children('.item_title')
     .click(function () {
+      $(this).toggleClass('_active');
       $(this).siblings().slideToggle();
     });
 
@@ -74,5 +75,12 @@ $(function () {
   $('.drop_down_item').click(function () {
     $(this).parent().siblings('.drop_down_title').children('span').text($(this).text());
     $(this).parent().slideUp();
+  });
+
+  $('.warning').click(function () {
+    $('.warning_popup').addClass('_active');
+  });
+  $('.warning_close').click(function () {
+    $('.warning_popup').removeClass('_active');
   });
 });

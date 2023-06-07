@@ -68,10 +68,14 @@
             </div>
           </div>
         </div>
+        <div class="video_bg">
+          <div class="img"></div>
+          <video playsinline autoplay muted loop poster="img/main_bg.jpg" src="img/Куб.mp4"></video>
+        </div>
       </div>
       <main class="main">
         <div class="advanteges_block _tile">
-          <div class="overflow_title">Преимущества платформы</div>
+          <div class="overflow_title"><span>Преимущества</span> платформы</div>
           <div class="wrapper">
             <div class="left_part">
               <h2 class="block_title">LOW CODE</h2>
@@ -108,7 +112,7 @@
               <div class="warning">
                 NBT зарегистрирована в реестре Российского ПО <img src="img/warning.svg" alt="" />
               </div>
-              <!-- <div class="warning_popup">
+              <div class="warning_popup">
                 <div class="title">NBT зарегистрирована в реестре Российского ПО.</div>
                 <p>
                   Наша полностью импортонезависимая платформа для качественной реализации
@@ -119,7 +123,10 @@
                   Возможности платформы позволяют создавать решения без написания кода, тем самым мы
                   упрощаем процесс цифровизации и трансформации компании.
                 </p>
-              </div> -->
+                <div class="warning_close">
+                  <img src="img/cross.svg" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -243,10 +250,54 @@
               <a href="#" class="all_projects">Все проекты</a>
               <div class="slider_controls">
                 <div class="arrow_prev">
-                  <img src="img/arrow.svg" alt="" />
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M46.5 24C46.5 36.4264 36.4264 46.5 24 46.5C11.5736 46.5 1.49999 36.4264 1.5 24C1.5 11.5736 11.5736 1.5 24 1.5C36.4264 1.5 46.5 11.5736 46.5 24Z"
+                      fill="#032EBC"
+                    />
+                    <path
+                      d="M46.5 24C46.5 36.4264 36.4264 46.5 24 46.5C11.5736 46.5 1.49999 36.4264 1.5 24C1.5 11.5736 11.5736 1.5 24 1.5C36.4264 1.5 46.5 11.5736 46.5 24Z"
+                      fill="#001471"
+                    />
+                    <path
+                      d="M26.5 31.5L19 24L26.5 16.5M24 46.5C36.4264 46.5 46.5 36.4264 46.5 24C46.5 11.5736 36.4264 1.5 24 1.5C11.5736 1.5 1.5 11.5736 1.49999 24C1.49999 36.4264 11.5736 46.5 24 46.5Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
                 <div class="arrow_next">
-                  <img src="img/arrow.svg" alt="" />
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M46.5 24C46.5 36.4264 36.4264 46.5 24 46.5C11.5736 46.5 1.49999 36.4264 1.5 24C1.5 11.5736 11.5736 1.5 24 1.5C36.4264 1.5 46.5 11.5736 46.5 24Z"
+                      fill="#032EBC"
+                    />
+                    <path
+                      d="M46.5 24C46.5 36.4264 36.4264 46.5 24 46.5C11.5736 46.5 1.49999 36.4264 1.5 24C1.5 11.5736 11.5736 1.5 24 1.5C36.4264 1.5 46.5 11.5736 46.5 24Z"
+                      fill="#001471"
+                    />
+                    <path
+                      d="M26.5 31.5L19 24L26.5 16.5M24 46.5C36.4264 46.5 46.5 36.4264 46.5 24C46.5 11.5736 36.4264 1.5 24 1.5C11.5736 1.5 1.5 11.5736 1.49999 24C1.49999 36.4264 11.5736 46.5 24 46.5Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -299,16 +350,19 @@
                 <div class="number">1</div>
                 <div class="desc">Госсаказ</div>
                 <a href="#" class="learn_more">Подробнее</a>
+                <img src="img/smm_back.png" alt="" />
               </div>
               <div class="smm_card">
                 <div class="number">2</div>
                 <div class="desc">Эффективные <br />закупки: 223-ФЗ</div>
                 <a href="#" class="learn_more">Подробнее</a>
+                <img src="img/smm_back.png" alt="" />
               </div>
               <div class="smm_card">
                 <div class="number">3</div>
                 <div class="desc">Управление <br />поставщиками</div>
                 <a href="#" class="learn_more">Подробнее</a>
+                <img src="img/smm_back.png" alt="" />
               </div>
               <div class="smm_card">
                 <div class="number">4</div>
@@ -317,11 +371,13 @@
                   торговые площадки
                 </div>
                 <a href="#" class="learn_more">Подробнее</a>
+                <img src="img/smm_back.png" alt="" />
               </div>
               <div class="smm_card">
                 <div class="number">5</div>
                 <div class="desc">Эффективные <br />закупки</div>
                 <a href="#" class="learn_more">Подробнее</a>
+                <img src="img/smm_back.png" alt="" />
               </div>
               <div class="smm_card">
                 <div class="number">6</div>
@@ -330,6 +386,7 @@
                   контрактами
                 </div>
                 <a href="#" class="learn_more">Подробнее</a>
+                <img src="img/smm_back.png" alt="" />
               </div>
             </div>
           </div>
