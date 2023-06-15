@@ -1109,6 +1109,7 @@ h4 {
           margin-bottom: 24px;
           padding-bottom: 24px;
           border-bottom: 1px solid #fff4;
+
           @media screen and (max-width: 700px) {
             font-size: 18px;
             line-height: 30px;
@@ -2897,6 +2898,15 @@ h4 {
       position: relative;
       flex: 0 1 25%;
       padding: 40px 25px 30px;
+      background: radial-gradient(
+        934.16% 1067.81% at -135.49% -476.88%,
+        #3934c4 4.69%,
+        rgba(0, 80, 187, 0.27) 31.77%,
+        rgba(0, 80, 187, 0.27) 43.19%,
+        #000418 65.23%
+      );
+      background-blend-mode: hard-light, normal, normal, normal;
+      border-radius: 30px;
       .img {
         position: absolute;
         top: 0;
@@ -2909,6 +2919,18 @@ h4 {
           object-fit: cover;
           border-radius: 30px;
         }
+      }
+
+      transition: 0.3s;
+
+      &:hover {
+        background: radial-gradient(
+          934.16% 1067.81% at -135.49% -476.88%,
+          #347ec4 4.69%,
+          rgba(37, 131, 255, 0.632) 31.77%,
+          rgb(77, 154, 255) 43.19%,
+          #000418 66.96%
+        );
       }
 
       @media screen and (max-width: 1200px) {
