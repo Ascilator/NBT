@@ -83,4 +83,34 @@ $(function () {
   $('.warning_close').click(function () {
     $('.warning_popup').removeClass('_active');
   });
+
+  const type = () => {
+    const text = $('#typed').text();
+    $('#typed').text('');
+    let count = 0;
+    let maxspeed = 50;
+
+    function character(start, end, text) {
+      return text.substring(start, end);
+    }
+
+    function typeLetter() {
+      let random = Math.floor(Math.random() * maxspeed);
+      if (count === text.length) {
+        return;
+      }
+      setTimeout(typeLetter, random);
+      if (count < 42) {
+        $('#typed').html(
+          $('#typed').html() + '<span>' + character(count, count + 1, text) + '</span>'
+        );
+      } else {
+        $('#typed').html($('#typed').html() + character(count, count + 1, text));
+      }
+      count++;
+    }
+
+    typeLetter();
+  };
+  type();
 });
