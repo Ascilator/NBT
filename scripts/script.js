@@ -88,7 +88,7 @@ $(function () {
     const text = $('#typed').text();
     $('#typed').text('');
     let count = 0;
-    let maxspeed = 50;
+    let maxspeed = 30;
 
     function character(start, end, text) {
       return text.substring(start, end);
@@ -100,7 +100,14 @@ $(function () {
         return;
       }
       setTimeout(typeLetter, random);
-      if (count < 42) {
+      if (character(count, count + 1, text) === '|') {
+        $('#typed').html(
+          $('#typed').html() +
+            '<span class="karetka">' +
+            character(count, count + 1, text) +
+            '</span>'
+        );
+      } else if (count < 42) {
         $('#typed').html(
           $('#typed').html() + '<span>' + character(count, count + 1, text) + '</span>'
         );
