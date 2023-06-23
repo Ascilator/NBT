@@ -4039,6 +4039,16 @@ h4 {
         font-size: 34px;
         line-height: 42px;
         color: $color_blue;
+        @media screen and (max-width: 1200px) {
+          font-size: 24px;
+          line-height: 28px;
+        }
+        @media screen and (max-width: 1000px) {
+          margin-bottom: 50px;
+        }
+        @media screen and (max-width: 600px) {
+          margin-bottom: 20px;
+        }
       }
       .desc {
         font-weight: 400;
@@ -4046,7 +4056,20 @@ h4 {
         line-height: 23px;
         color: $color_blue;
       }
+
+      @media screen and (max-width: 1000px) {
+        flex: 0 1 calc(50% - 10px);
+      }
+      @media screen and (max-width: 600px) {
+        flex: 0 1 100%;
+      }
     }
+    @media screen and (max-width: 1500px) {
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 50px 0;
   }
 }
 

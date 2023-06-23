@@ -4249,11 +4249,47 @@ h4 {
   line-height: 42px;
   color: #001471;
 }
+@media screen and (max-width: 1200px) {
+  .solutions_benefits .content_part .content_item .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .solutions_benefits .content_part .content_item .title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .solutions_benefits .content_part .content_item .title {
+    margin-bottom: 20px;
+  }
+}
 .solutions_benefits .content_part .content_item .desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: #001471;
+}
+@media screen and (max-width: 1000px) {
+  .solutions_benefits .content_part .content_item {
+    flex: 0 1 calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .solutions_benefits .content_part .content_item {
+    flex: 0 1 100%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .solutions_benefits .content_part {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .solutions_benefits {
+    padding: 50px 0;
+  }
 }
 
 .results {
