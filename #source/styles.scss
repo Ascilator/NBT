@@ -713,7 +713,7 @@ h4 {
       padding-top: 80px;
     }
     .page_title {
-      margin-bottom: 0;
+      margin-bottom: 40px;
     }
     .desc {
       max-width: 100%;
@@ -726,6 +726,9 @@ h4 {
 
       @media screen and (max-width: 700px) {
         margin-top: 20px;
+      }
+      @media screen and (max-width: 700px) {
+        display: block;
       }
     }
     .header,
@@ -833,6 +836,20 @@ h4 {
 
     @media screen and (max-width: 800px) {
       justify-content: flex-start;
+    }
+  }
+  &._with_search {
+    @media screen and (max-width: 700px) {
+      .wrapper {
+        padding: 20px 0;
+      }
+      .breadcrumps {
+        display: none;
+      }
+      .search_blog {
+        display: block;
+        margin: 0 20px;
+      }
     }
   }
   &._no_mobile {
@@ -2885,6 +2902,10 @@ h4 {
           color: $color_blue;
           background: #fff;
         }
+
+        @media screen and (max-width: 700px) {
+          padding: 6px 30px;
+        }
       }
 
       @media screen and (max-width: 1000px) {
@@ -2892,12 +2913,21 @@ h4 {
         row-gap: 40px;
         flex-wrap: wrap;
       }
+
+      @media screen and (max-width: 700px) {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
     .aqua_btn {
       text-transform: none;
 
       @media screen and (max-width: 1000px) {
         margin-bottom: 40px;
+      }
+      @media screen and (max-width: 700px) {
+        display: none;
       }
     }
 
@@ -3080,6 +3110,10 @@ h4 {
     display: flex;
     align-items: stretch;
     gap: 25px;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }
   }
   .left_part {
     flex: 0 0 425px;
@@ -3241,6 +3275,13 @@ h4 {
       gap: 30px;
       .page_title {
         margin-bottom: 70px;
+        @media screen and (max-width: 1400px) {
+          font-size: 28px;
+          line-height: 32px;
+        }
+        @media screen and (max-width: 700px) {
+          margin-bottom: 40px;
+        }
       }
 
       p {
@@ -3249,6 +3290,11 @@ h4 {
         line-height: 36px;
         color: $color_blue;
         margin-bottom: 50px;
+        @media screen and (max-width: 700px) {
+          font-size: 12px;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
       }
       img {
         max-width: 100%;
@@ -3270,6 +3316,10 @@ h4 {
         font-size: 34px;
         line-height: 42px;
         color: $color_blue;
+        @media screen and (max-width: 700px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
       }
 
       .blue_block {
@@ -3281,6 +3331,12 @@ h4 {
         padding: 64px 44px 64px 64px;
         background: linear-gradient(180deg, #dcf0ff 0%, #f3faff 100%), #ffffff;
         border-radius: 30px;
+        @media screen and (max-width: 700px) {
+          padding: 20px 15px;
+          margin: 50px 0;
+          font-size: 12px;
+          line-height: 22px;
+        }
       }
 
       .quotter {
@@ -3291,9 +3347,15 @@ h4 {
         font-size: 22px;
         line-height: 36px;
         color: $color_blue;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
       }
       .bottom {
         padding-right: 10%;
+        @media screen and (max-width: 700px) {
+          padding: 0;
+        }
       }
 
       .table {
@@ -3308,6 +3370,10 @@ h4 {
             font-size: 22px;
             line-height: 30px;
             color: $color_blue;
+            @media screen and (max-width: 700px) {
+              font-size: 12px;
+              line-height: 30px;
+            }
           }
           .info {
             span {
@@ -3316,8 +3382,15 @@ h4 {
               font-size: 22px;
               line-height: 50px;
               color: $color_blue;
+              @media screen and (max-width: 700px) {
+                font-size: 12px;
+                line-height: 30px;
+              }
             }
           }
+        }
+        @media screen and (max-width: 700px) {
+          margin-bottom: 20px;
         }
       }
       .right_controls {
@@ -3336,11 +3409,68 @@ h4 {
           border-bottom: 1px dashed $color_blue;
           color: $color_blue;
         }
+
+        @media screen and (max-width: 1400px) {
+          flex: 0 0 100px;
+        }
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
       }
+
+      @media screen and (max-width: 1400px) {
+        padding: 50px 20px;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 -15px;
     }
   }
   &._materials {
     margin-bottom: 250px;
+
+    .doc_header {
+      @media screen and (max-width: 700px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: flex-start;
+      }
+    }
+
+    .left_part {
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+    .right_part {
+      @media screen and (max-width: 1000px) {
+        padding: 0 20px;
+      }
+      .materials {
+        .material {
+          @media screen and (max-width: 1000px) {
+            margin-bottom: 20px;
+          }
+          .non_img {
+            .title {
+              @media screen and (max-width: 700px) {
+                font-size: 18px;
+              }
+            }
+            @media screen and (max-width: 700px) {
+              padding: 30px;
+            }
+          }
+          @media screen and (max-width: 700px) {
+            height: 210px;
+          }
+        }
+        @media screen and (max-width: 1000px) {
+          display: block;
+        }
+      }
+    }
   }
 }
 
@@ -3560,6 +3690,7 @@ h4 {
 
       @media screen and (max-width: 700px) {
         height: 54px;
+        display: none;
       }
     }
     @media screen and (max-width: 1500px) {
@@ -3707,6 +3838,9 @@ h4 {
     }
     .aqua_btn {
       text-transform: none;
+      @media screen and (max-width: 700px) {
+        margin-bottom: 50px;
+      }
     }
     @media screen and (max-width: 1000px) {
       flex-direction: column-reverse;
@@ -4103,6 +4237,10 @@ h4 {
       margin-bottom: 34px;
       padding-bottom: 34px;
       border-bottom: 1px solid #fff2;
+      @media screen and (max-width: 700px) {
+        font-size: 28px;
+        line-height: 32px;
+      }
     }
     .desc {
       font-weight: 400;
@@ -4120,6 +4258,10 @@ h4 {
     align-items: stretch;
     justify-content: space-between;
     margin-bottom: 220px;
+    @media screen and (max-width: 1000px) {
+      display: block;
+      margin-bottom: 100px;
+    }
   }
   .left {
     font-weight: 400;
@@ -4142,6 +4284,9 @@ h4 {
     line-height: 42px;
     color: $color_blue;
     margin-bottom: 180px;
+    @media screen and (max-width: 800px) {
+      margin-bottom: 50px;
+    }
   }
   .adv_block {
     display: flex;
@@ -4165,6 +4310,12 @@ h4 {
         line-height: 30px;
         color: $color_blue;
       }
+      @media screen and (max-width: 800px) {
+        margin-bottom: 20px;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      display: block;
     }
   }
 }
