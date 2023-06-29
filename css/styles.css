@@ -760,6 +760,11 @@ h4 {
 .first_screen._slider_bg .desc {
   max-width: 100%;
 }
+@media screen and (max-width: 700px) {
+  .first_screen._slider_bg .desc {
+    margin-bottom: 20px;
+  }
+}
 .first_screen._slider_bg .btn_container {
   margin-right: 0;
   margin-top: -20px;

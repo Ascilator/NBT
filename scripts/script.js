@@ -88,7 +88,7 @@ $(function () {
     const text = $('#typed').text();
     $('#typed').text('');
     let count = 0;
-    let maxspeed = 30;
+    let maxspeed = 70;
 
     function character(start, end, text) {
       return text.substring(start, end);
