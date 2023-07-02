@@ -88,7 +88,7 @@ $(function () {
     const text = $('#typed').text();
     $('#typed').text('');
     let count = 0;
-    let maxspeed = 70;
+    let maxspeed = 150;
 
     function character(start, end, text) {
       return text.substring(start, end);
@@ -100,19 +100,29 @@ $(function () {
         return;
       }
       setTimeout(typeLetter, random);
-      if (character(count, count + 1, text) === '|') {
+      if (count === 0) {
         $('#typed').html(
           $('#typed').html() +
-            '<span class="karetka">' +
+            '<span>' +
             character(count, count + 1, text) +
-            '</span>'
+            '</span>' +
+            '<span class="karetka">|</span>'
         );
-      } else if (count < 42) {
+      }
+      if (count < 42) {
         $('#typed').html(
-          $('#typed').html() + '<span>' + character(count, count + 1, text) + '</span>'
+          $('#typed').html().slice(0, -30) +
+            '<span>' +
+            character(count, count + 1, text) +
+            '</span>' +
+            '<span class="karetka">|</span>'
         );
       } else {
-        $('#typed').html($('#typed').html() + character(count, count + 1, text));
+        $('#typed').html(
+          $('#typed').html().slice(0, -30) +
+            character(count, count + 1, text) +
+            '<span class="karetka">|</span>'
+        );
       }
       count++;
     }
