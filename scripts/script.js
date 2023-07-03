@@ -88,7 +88,7 @@ $(function () {
     const text = $('#typed').text();
     $('#typed').text('');
     let count = 0;
-    let maxspeed = 150;
+    let maxspeed = 120;
 
     function character(start, end, text) {
       return text.substring(start, end);
@@ -97,6 +97,7 @@ $(function () {
     function typeLetter() {
       let random = Math.floor(Math.random() * maxspeed);
       if (count === text.length) {
+        $('.karetka').addClass('_active');
         return;
       }
       setTimeout(typeLetter, random);
