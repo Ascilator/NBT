@@ -967,7 +967,7 @@ h4 {
     .adv_item {
       flex: 0 1 calc(50% - 25px);
 
-      .adv_title {
+      .advan_title {
         font-weight: 400;
         font-size: 48px;
         line-height: 58px;
@@ -1324,7 +1324,7 @@ h4 {
   &._project {
     padding-top: 150px;
     .docs_part .right_part {
-      align-items: flex-end;
+      align-items: flex-start;
     }
     .docs_part .right_part._small_gap {
       align-items: stretch;
@@ -1706,6 +1706,61 @@ h4 {
         }
         &._full {
           flex: 0 1 100%;
+        }
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 80px;
+        .checkbox {
+          input {
+            width: 0;
+            height: 0;
+            font-size: 0;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          input:checked + label {
+            .icon {
+              svg {
+                opacity: 1;
+              }
+            }
+          }
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .icon {
+              border-radius: 5px;
+              width: 24px;
+              height: 24px;
+              flex: 0 0 24px;
+              border: 1px solid #001471;
+              svg {
+                width: 100%;
+                opacity: 0;
+                height: 100%;
+              }
+            }
+            .text {
+              color: #001471;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 131.3%;
+            }
+          }
+        }
+        .link {
+          color: #001471;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 131.3%;
         }
       }
     }
@@ -2350,6 +2405,9 @@ h4 {
 
 .low_code_tools {
   padding-top: 200px;
+  &._dif_page {
+    padding-top: 0;
+  }
   .block_title {
     color: #fff;
     margin-bottom: 40px;
@@ -2770,7 +2828,7 @@ h4 {
 }
 
 .securiyu_block {
-  padding: 150px 0;
+  padding: 150px 0 60px;
   .block_title {
     margin-bottom: 150px;
     @media screen and (max-width: 1000px) {
@@ -2872,7 +2930,7 @@ h4 {
 
 .support_center {
   padding-top: 260px;
-  padding-bottom: 230px;
+  padding-bottom: 220px;
   .block_title {
     color: #fff;
     &.margin {
@@ -2950,12 +3008,14 @@ h4 {
       flex: 0 1 25%;
       padding: 40px 25px 30px;
       background: radial-gradient(
-        934.16% 1067.81% at -135.49% -476.88%,
-        #3934c4 4.69%,
-        rgba(0, 80, 187, 0.27) 31.77%,
-        rgba(0, 80, 187, 0.27) 43.19%,
-        #000418 65.23%
-      );
+          947.96% 1160.74% at -135.49% -476.88%,
+          #3934c4 4.69%,
+          rgba(0, 80, 187, 0.27) 31.77%,
+          rgba(0, 80, 187, 0.27) 43.19%,
+          #000418 60.69%
+        ),
+        linear-gradient(181deg, #1b2d60 0%, #31488b 74.53%);
+
       background-blend-mode: hard-light, normal, normal, normal;
       border-radius: 30px;
       overflow: hidden;
@@ -3046,7 +3106,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 120px;
   .arrow_prev {
     transform: scale(-1, 1);
     &._disabled {
@@ -3204,7 +3264,9 @@ h4 {
         font-size: 16px;
         line-height: 20px;
         color: #ffffff;
-        text-decoration: underline;
+        padding: 7px 20px;
+        border-radius: 43px;
+        border: 1px solid #fff;
       }
     }
   }
@@ -3271,7 +3333,7 @@ h4 {
         display: flex;
         align-items: flex-start;
       }
-      padding: 100px 20px 200px 10%;
+      padding: 90px 20px 200px 10%;
 
       background: #fff;
       border-radius: 30px;
@@ -3645,7 +3707,7 @@ h4 {
 
     .how_to_sort {
       margin-left: auto;
-      margin-right: 30px;
+      margin-right: 45px;
       position: relative;
       .drop_down_title {
         font-family: 'Montserrat';
@@ -3921,6 +3983,8 @@ h4 {
 
 .project_description_block {
   padding: 150px 0;
+  position: relative;
+  z-index: 1;
   .block_header {
     display: flex;
     align-items: flex-start;
@@ -4135,7 +4199,7 @@ h4 {
 }
 
 .key_processes {
-  padding: 140px 0 100px;
+  padding: 130px 0 100px;
   margin-top: 170px;
   .block_title {
     margin-bottom: 75px;
@@ -4270,7 +4334,6 @@ h4 {
     font-weight: 400;
     font-size: 34px;
     line-height: 42px;
-    text-transform: uppercase;
     color: $color_blue;
   }
   .right {
@@ -4286,7 +4349,7 @@ h4 {
     font-size: 34px;
     line-height: 42px;
     color: $color_blue;
-    margin-bottom: 180px;
+    margin-bottom: 140px;
     @media screen and (max-width: 800px) {
       margin-bottom: 50px;
     }

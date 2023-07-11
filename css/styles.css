@@ -1029,7 +1029,7 @@ h4 {
 .advanteges_block .right_part .adv_item {
   flex: 0 1 calc(50% - 25px);
 }
-.advanteges_block .right_part .adv_item .adv_title {
+.advanteges_block .right_part .adv_item .advan_title {
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
@@ -1039,16 +1039,16 @@ h4 {
   padding-bottom: 24px;
   position: relative;
 }
-.advanteges_block .right_part .adv_item .adv_title span {
+.advanteges_block .right_part .adv_item .advan_title span {
   display: block;
   color: #8ef0ef;
 }
 @media screen and (max-width: 700px) {
-  .advanteges_block .right_part .adv_item .adv_title span {
+  .advanteges_block .right_part .adv_item .advan_title span {
     display: inline;
   }
 }
-.advanteges_block .right_part .adv_item .adv_title:after {
+.advanteges_block .right_part .adv_item .advan_title:after {
   content: "";
   bottom: 0;
   display: block;
@@ -1060,7 +1060,7 @@ h4 {
   opacity: 0.2;
 }
 @media screen and (max-width: 700px) {
-  .advanteges_block .right_part .adv_item .adv_title {
+  .advanteges_block .right_part .adv_item .advan_title {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.03em;
@@ -1404,7 +1404,7 @@ h4 {
   padding-top: 150px;
 }
 .materials_block._project .docs_part .right_part {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .materials_block._project .docs_part .right_part._small_gap {
   align-items: stretch;
@@ -1807,6 +1807,54 @@ h4 {
 }
 .contact_us .form_part .right_part .input_item._full {
   flex: 0 1 100%;
+}
+.contact_us .form_part .right_part .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.contact_us .form_part .right_part .row .checkbox input {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.contact_us .form_part .right_part .row .checkbox input:checked + label .icon svg {
+  opacity: 1;
+}
+.contact_us .form_part .right_part .row .checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact_us .form_part .right_part .row .checkbox label .icon {
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  border: 1px solid #001471;
+}
+.contact_us .form_part .right_part .row .checkbox label .icon svg {
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+}
+.contact_us .form_part .right_part .row .checkbox label .text {
+  color: #001471;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131.3%;
+}
+.contact_us .form_part .right_part .row .link {
+  color: #001471;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131.3%;
 }
 @media screen and (max-width: 1400px) {
   .contact_us .form_part {
@@ -2499,6 +2547,9 @@ h4 {
 .low_code_tools {
   padding-top: 200px;
 }
+.low_code_tools._dif_page {
+  padding-top: 0;
+}
 .low_code_tools .block_title {
   color: #fff;
   margin-bottom: 40px;
@@ -2957,7 +3008,7 @@ h4 {
 }
 
 .securiyu_block {
-  padding: 150px 0;
+  padding: 150px 0 60px;
 }
 .securiyu_block .block_title {
   margin-bottom: 150px;
@@ -3072,7 +3123,7 @@ h4 {
 
 .support_center {
   padding-top: 260px;
-  padding-bottom: 230px;
+  padding-bottom: 220px;
 }
 .support_center .block_title {
   color: #fff;
@@ -3155,7 +3206,7 @@ h4 {
   position: relative;
   flex: 0 1 25%;
   padding: 40px 25px 30px;
-  background: radial-gradient(934.16% 1067.81% at -135.49% -476.88%, #3934c4 4.69%, rgba(0, 80, 187, 0.27) 31.77%, rgba(0, 80, 187, 0.27) 43.19%, #000418 65.23%);
+  background: radial-gradient(947.96% 1160.74% at -135.49% -476.88%, #3934c4 4.69%, rgba(0, 80, 187, 0.27) 31.77%, rgba(0, 80, 187, 0.27) 43.19%, #000418 60.69%), linear-gradient(181deg, #1b2d60 0%, #31488b 74.53%);
   background-blend-mode: hard-light, normal, normal, normal;
   border-radius: 30px;
   overflow: hidden;
@@ -3247,7 +3298,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .pagination .arrow_prev {
   transform: scale(-1, 1);
@@ -3410,7 +3461,9 @@ h4 {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  text-decoration: underline;
+  padding: 7px 20px;
+  border-radius: 43px;
+  border: 1px solid #fff;
 }
 .big_text_block .right_part {
   flex: 1 1 auto;
@@ -3470,7 +3523,7 @@ h4 {
   cursor: pointer;
 }
 .big_text_block .right_part .docs_main_part {
-  padding: 100px 20px 200px 10%;
+  padding: 90px 20px 200px 10%;
   background: #fff;
   border-radius: 30px;
   gap: 30px;
@@ -3848,7 +3901,7 @@ h4 {
 }
 .blog_container .block_header .how_to_sort {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 45px;
   position: relative;
 }
 .blog_container .block_header .how_to_sort .drop_down_title {
@@ -4143,6 +4196,8 @@ h4 {
 
 .project_description_block {
   padding: 150px 0;
+  position: relative;
+  z-index: 1;
 }
 .project_description_block .block_header {
   display: flex;
@@ -4375,7 +4430,7 @@ h4 {
 }
 
 .key_processes {
-  padding: 140px 0 100px;
+  padding: 130px 0 100px;
   margin-top: 170px;
 }
 .key_processes .block_title {
@@ -4528,7 +4583,6 @@ h4 {
   font-weight: 400;
   font-size: 34px;
   line-height: 42px;
-  text-transform: uppercase;
   color: #001471;
 }
 .our_goals .right {
@@ -4544,7 +4598,7 @@ h4 {
   font-size: 34px;
   line-height: 42px;
   color: #001471;
-  margin-bottom: 180px;
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 800px) {
   .our_goals .block_title {
