@@ -66,6 +66,7 @@ textarea {
 
 main {
   flex: 1 1 auto;
+  z-index: 1;
 }
 
 h1,
@@ -934,8 +935,8 @@ h4 {
   -webkit-text-stroke: 1px #001471;
   -webkit-text-fill-color: transparent;
   padding-left: 100%;
-  -webkit-animation: scroll 8s infinite linear;
-          animation: scroll 8s infinite linear;
+  -webkit-animation: scroll 16s infinite linear;
+          animation: scroll 16s infinite linear;
 }
 @media screen and (max-width: 1200px) {
   .overflow_title {

@@ -80,6 +80,18 @@ $(function () {
   $('.warning').click(function () {
     $('.warning_popup').addClass('_active');
   });
+  $(document).click(function (e) {
+    if (e.target.closest('.warning')) return;
+
+    if (!e.target.closest('.warning_popup')) {
+      $('.warning_popup').removeClass('_active');
+    }
+  });
+
+  $(document).scroll(function () {
+    $('.warning_popup').removeClass('_active');
+  });
+
   $('.warning_close').click(function () {
     $('.warning_popup').removeClass('_active');
   });
@@ -110,6 +122,14 @@ $(function () {
             '<span class="karetka">|</span>'
         );
       }
+      if (character(count, count + 1, text) === "'") {
+        $('#typed').html(
+          $('#typed').html().slice(0, -30) + '<br />' + '<span class="karetka">|</span>'
+        );
+        count++;
+        return;
+      }
+
       if (count < 42) {
         $('#typed').html(
           $('#typed').html().slice(0, -30) +
