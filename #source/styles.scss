@@ -605,7 +605,8 @@ h4 {
     top: 0;
     left: 0;
     .img {
-      background: linear-gradient(0deg, rgba(0, 42, 134, 0.5), rgba(0, 42, 134, 0.5)), url(image.png);
+      background: linear-gradient(0deg, rgba(0, 42, 134, 0.5), rgba(0, 42, 134, 0.5)),
+        url(image.png);
       background-blend-mode: multiply, normal;
       position: absolute;
       width: 100%;
@@ -884,11 +885,10 @@ h4 {
   top: 0;
   user-select: none;
   transform: translate(0%, 0);
-  -webkit-text-stroke: 1px $color_blue;
+  -webkit-text-stroke: 2px $color_blue;
   -webkit-text-fill-color: transparent;
 
-  padding-left: 100%;
-  animation: scroll 16s infinite linear;
+  animation: scroll 8s infinite linear;
   @media screen and (max-width: 1200px) {
     font-size: 150px;
     line-height: 180px;
@@ -906,7 +906,7 @@ h4 {
   }
 
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-50%, 0);
   }
 }
 
@@ -1267,7 +1267,11 @@ h4 {
       .key_fact {
         padding: 40px 30px;
         flex: 0 1 calc(33.333% - 15px);
-        background: linear-gradient(270deg, rgba(255, 162, 223, 0.14) -4.07%, rgba(105, 159, 255, 0.14) 47.91%);
+        background: linear-gradient(
+          270deg,
+          rgba(255, 162, 223, 0.14) -4.07%,
+          rgba(105, 159, 255, 0.14) 47.91%
+        );
         border-radius: 30px;
 
         .icon {
@@ -1657,6 +1661,16 @@ h4 {
 
 .contact_us {
   padding: 150px 0 114px;
+  &._mt {
+    margin-top: 220px;
+    @media screen and (max-width: 1200px) {
+      margin-top: 100px;
+    }
+    @media screen and (max-width: 600px) {
+      margin-top: 50px;
+    }
+  }
+
   .wrapper {
   }
   .form_part {
@@ -2353,7 +2367,11 @@ h4 {
     row-gap: 20px;
     .adv_card {
       flex: 0 1 calc(25% - 15px);
-      background: linear-gradient(270deg, rgba(255, 162, 223, 0.14) -4.07%, rgba(105, 159, 255, 0.14) 47.91%);
+      background: linear-gradient(
+        270deg,
+        rgba(255, 162, 223, 0.14) -4.07%,
+        rgba(105, 159, 255, 0.14) 47.91%
+      );
       border-radius: 30px;
       padding: 43px 40px 30px;
 
@@ -2999,7 +3017,14 @@ h4 {
       position: relative;
       flex: 0 1 25%;
       padding: 40px 25px 30px;
-      background: radial-gradient(947.96% 1160.74% at -135.49% -476.88%, #3934c4 4.69%, rgba(0, 80, 187, 0.27) 31.77%, rgba(0, 80, 187, 0.27) 43.19%, #000418 60.69%), linear-gradient(181deg, #1b2d60 0%, #31488b 74.53%);
+      background: radial-gradient(
+          947.96% 1160.74% at -135.49% -476.88%,
+          #3934c4 4.69%,
+          rgba(0, 80, 187, 0.27) 31.77%,
+          rgba(0, 80, 187, 0.27) 43.19%,
+          #000418 60.69%
+        ),
+        linear-gradient(181deg, #1b2d60 0%, #31488b 74.53%);
 
       background-blend-mode: hard-light, normal, normal, normal;
       border-radius: 30px;
@@ -3525,7 +3550,15 @@ h4 {
 }
 
 .menu {
-  background: radial-gradient(934.16% 1067.81% at -135.49% -476.88%, #3934c4 0%, rgba(0, 80, 187, 0.27) 24.48%, rgba(0, 80, 187, 0.27) 33.33%, rgba(0, 80, 187, 0.27) 43.23%, #081f96 60.94%), linear-gradient(0deg, #000830, #000830);
+  background: radial-gradient(
+      934.16% 1067.81% at -135.49% -476.88%,
+      #3934c4 0%,
+      rgba(0, 80, 187, 0.27) 24.48%,
+      rgba(0, 80, 187, 0.27) 33.33%,
+      rgba(0, 80, 187, 0.27) 43.23%,
+      #081f96 60.94%
+    ),
+    linear-gradient(0deg, #000830, #000830);
   background-blend-mode: hard-light, normal, normal;
   border-radius: 30px;
   padding: 30px;
@@ -4123,7 +4156,11 @@ h4 {
     .content_item {
       padding: 40px 30px;
       flex: 0 1 calc(33.333% - 15px);
-      background: linear-gradient(270deg, rgba(255, 162, 223, 0.14) -4.07%, rgba(105, 159, 255, 0.14) 47.91%);
+      background: linear-gradient(
+        270deg,
+        rgba(255, 162, 223, 0.14) -4.07%,
+        rgba(105, 159, 255, 0.14) 47.91%
+      );
       border-radius: 30px;
 
       .icon {
