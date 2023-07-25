@@ -79,14 +79,14 @@ h2 {
 }
 @media screen and (max-width: 1200px) {
   h1,
-h2 {
+  h2 {
     font-size: 40px;
     line-height: 48px;
   }
 }
 @media screen and (max-width: 800px) {
   h1,
-h2 {
+  h2 {
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
@@ -95,7 +95,7 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   h1,
-h2 {
+  h2 {
     font-size: 23px;
     line-height: 28px;
     text-transform: uppercase;
@@ -107,17 +107,7 @@ h2 {
 }
 
 .karetka._active {
-  -webkit-animation: pulse 0.8s infinite;
-          animation: pulse 0.8s infinite;
-}
-
-@-webkit-keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+  animation: pulse 0.8s infinite;
 }
 
 @keyframes pulse {
@@ -929,13 +919,15 @@ h4 {
   top: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transform: translate(0%, 0);
   -webkit-text-stroke: 2px #001471;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: scroll 8s infinite linear;
-          animation: scroll 8s infinite linear;
+  display: flex;
+  animation: scroll 8s infinite linear;
+}
+.overflow_title .part {
+  margin: 0 300px;
 }
 @media screen and (max-width: 1200px) {
   .overflow_title {
@@ -947,15 +939,6 @@ h4 {
   .overflow_title {
     font-size: 100px;
     line-height: 122px;
-  }
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, 0);
   }
 }
 
@@ -2600,7 +2583,7 @@ h4 {
 }
 @media screen and (max-width: 700px) {
   .low_code_tools .tools_container .visible,
-.low_code_tools .tools_container .invisible {
+  .low_code_tools .tools_container .invisible {
     row-gap: 20px;
   }
 }
@@ -3047,7 +3030,7 @@ h4 {
 }
 @media screen and (max-width: 1000px) {
   .securiyu_block .row_item .left_part,
-.securiyu_block .row_item .right_part {
+  .securiyu_block .row_item .right_part {
     flex: 0 1 auto;
   }
 }
