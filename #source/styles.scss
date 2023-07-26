@@ -1775,6 +1775,7 @@ h4 {
           font-style: normal;
           font-weight: 400;
           line-height: 131.3%;
+          text-decoration: underline;
         }
       }
     }
@@ -1790,6 +1791,11 @@ h4 {
   .contact_part {
     display: flex;
     align-items: stretch;
+
+    .blue_round_btn {
+      border: 1px solid $color_blue;
+    }
+
     .left_part {
       flex: 0 1 50%;
       @media screen and (max-width: 1000px) {

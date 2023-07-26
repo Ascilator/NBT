@@ -1872,6 +1872,7 @@ h4 {
   font-style: normal;
   font-weight: 400;
   line-height: 131.3%;
+  text-decoration: underline;
 }
 @media screen and (max-width: 1400px) {
   .contact_us .form_part {
@@ -1886,6 +1887,9 @@ h4 {
 .contact_us .contact_part {
   display: flex;
   align-items: stretch;
+}
+.contact_us .contact_part .blue_round_btn {
+  border: 1px solid #001471;
 }
 .contact_us .contact_part .left_part {
   flex: 0 1 50%;
