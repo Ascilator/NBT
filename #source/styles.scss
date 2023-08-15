@@ -63,6 +63,9 @@ textarea {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  &._no_overflow {
+    overflow: visible;
+  }
 }
 
 main {
@@ -1644,8 +1647,10 @@ h4 {
       top: 0;
       left: 0;
     }
+    transition: 0.3s;
     &:hover {
       color: #fff;
+      background: none;
       img {
         opacity: 1;
       }
@@ -3484,6 +3489,9 @@ h4 {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+        top: 20px;
+        padding-left: 20px;
+        position: sticky;
 
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;

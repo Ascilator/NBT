@@ -47,6 +47,25 @@ $(function () {
     appendDots: $('.slider_bg_dots')
   });
 
+  $('.btn_container')
+    .children('button')
+    .click(function () {
+      $(document.documentElement).animate(
+        {
+          scrollTop: $('.contact_us').offset().top
+        },
+        2000
+      );
+    });
+  $('._contact_us').click(function () {
+    $(document.documentElement).animate(
+      {
+        scrollTop: $('.contact_us').offset().top
+      },
+      2000
+    );
+  });
+
   $('.menu_item')
     .children('.item_title')
     .click(function () {

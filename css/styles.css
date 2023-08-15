@@ -63,6 +63,9 @@ textarea {
   flex-direction: column;
   overflow: hidden;
 }
+.big_wrapper._no_overflow {
+  overflow: visible;
+}
 
 main {
   flex: 1 1 auto;
@@ -1684,6 +1687,7 @@ h4 {
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  transition: 0.3s;
 }
 .smm_block .smm_card .number {
   font-weight: 500;
@@ -1738,6 +1742,7 @@ h4 {
 }
 .smm_block .smm_card:hover {
   color: #fff;
+  background: none;
 }
 .smm_block .smm_card:hover img {
   opacity: 1;
@@ -3690,6 +3695,10 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  top: 20px;
+  padding-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
