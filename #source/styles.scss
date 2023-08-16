@@ -4453,6 +4453,8 @@ h4 {
   transform: translate(-50%, -50%);
   z-index: 10;
   display: none;
+  max-width: 1200px;
+  width: 100%;
   .desc {
     margin-top: 15px;
     margin-bottom: 90px;
